@@ -1,0 +1,38 @@
+<div id="menuBar">
+  <div class="menu-container" id="fileMenuContainer">
+    <button>📁 Dosya</button>
+    <div class="menu" id="fileMenu">
+      <div onclick="location.reload()">Uygulamayı Yenile</div>
+      <div onclick="clearAllNotes()">Tüm Notları Sil</div>
+    </div>
+  </div>
+
+  <div class="menu-container" id="editMenuContainer">
+    <button>✏️ Düzen</button>
+    <div class="menu" id="editMenu">
+      <div onclick="alert('Geri Al özelliği henüz aktif değil')">Geri Al</div>
+      <div onclick="alert('Yinele özelliği henüz aktif değil')">Yinele</div>
+    </div>
+  </div>
+
+  <div class="menu-container" id="viewMenuContainer">
+    <button>🖥️ Görünüm</button>
+    <div class="menu" id="viewMenu">
+      <div onclick="toggleDarkMode()">Karanlık Mod</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Notlar ve Editör -->
+<div id="noteList"></div>
+
+<div id="noteEditor" style="display:none;">
+  <h3 id="editorTitle">Not Düzenleyici</h3>
+  <input type="text" id="noteTitleInput" placeholder="Not Başlığı" /><br><br>
+  <textarea id="noteContentInput" rows="10" cols="50" placeholder="Not içeriği..."></textarea><br><br>
+  <button onclick="saveNote()">💾 Kaydet</button>
+  <button onclick="clearContent()">🗑️ İçeriği Temizle</button>
+  <button onclick="closeEditor()">❌ Kapat</button>
+</div>

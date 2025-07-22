@@ -21,13 +21,13 @@
   justify-content: center;
 }
 
+/* Menü konteyner ve butonlar: varsayılan (açık mod) */
 .menu-container {
   position: relative;
   display: inline-block;
   margin-right: 20px;
 }
 
-/* Menü konteyner ve butonlar: varsayılan (açık mod) */
 .menu-container button {
   font-weight: bold;
   background-color: transparent;
@@ -36,6 +36,7 @@
   padding: 8px 12px;
   cursor: pointer;
   color: #000; /* Açık modda siyah */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hover efekti açık modda */
@@ -44,19 +45,7 @@
   border-radius: 4px;
 }
 
-/* 🌙 Karanlık modda menü butonları */
-body.dark-mode .menu-container button {
-  background-color: transparent;
-  color: #f0f0f0; /* Beyaz yazı */
-}
-
-/* Hover efekti karanlık modda */
-body.dark-mode .menu-container button:hover {
-  background-color: #333;
-  border-radius: 4px;
-}
-
-
+/* Menü dropdown içeriği */
 .menu {
   display: none;
   position: absolute;
@@ -72,18 +61,54 @@ body.dark-mode .menu-container button:hover {
 .menu div {
   padding: 8px 12px;
   cursor: pointer;
+  color: #000;
 }
 
 .menu div:hover {
   background-color: #f0f0f0;
 }
 
-/* Buradaki sihir: mouse üzerindeyken menüyü göster */
+/* Menü gösterme sihiri: mouse menu-container üzerindeyken göster */
 .menu-container:hover .menu {
   display: block;
 }
 
-/* Not kutuları: normal mod */
+/* KARANLIK MOD */
+
+/* Body dark mode arka plan ve yazı */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Menü butonları karanlık modda */
+body.dark-mode .menu-container button {
+  color: #f0f0f0; /* Açık yazı */
+  background-color: transparent;
+}
+
+/* Menü buton hover karanlık mod */
+body.dark-mode .menu-container button:hover {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+/* Menü dropdown karanlık mod */
+body.dark-mode .menu {
+  background-color: #2a2a2a;
+  border-color: #555;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+body.dark-mode .menu div {
+  color: #f0f0f0;
+}
+
+body.dark-mode .menu div:hover {
+  background-color: #3a3a3a;
+}
+
+/* Not kutuları normal mod */
 .note-card {
   width: 150px;
   height: 150px;
@@ -107,27 +132,12 @@ body.dark-mode .menu-container button:hover {
   transform: scale(1.03);
 }
 
-/* Not başlıkları */
 .note-card h4 {
   margin: 5px 0;
-  font-size: 18px; /* FONT BÜYÜTÜLDÜ */
+  font-size: 18px; /* Font büyütüldü */
 }
 
-/* "+" için özel görünüm */
-.note-card.add-new {
-  font-size: 40px;
-  font-weight: bold;
-  color: #666;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 🌙 Karanlık mod stili */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
+/* Not kutuları karanlık mod */
 body.dark-mode .note-card {
   background-color: #1e1e1e;
   color: #ffffff;
@@ -138,16 +148,8 @@ body.dark-mode .note-card:hover {
   background-color: #2a2a2a;
 }
 
+/* "+" kutusu karanlık mod */
 body.dark-mode .note-card.add-new {
   color: #bbb;
 }
 
-/* Menü de karanlık moda uysun */
-body.dark-mode .menu {
-  background-color: #2a2a2a;
-  border-color: #555;
-}
-
-body.dark-mode .menu div:hover {
-  background-color: #3a3a3a;
-}

@@ -131,8 +131,6 @@ body.dark-mode .menu div:hover {
 /* Not kutuları normal mod */
 .note-card {
   width: 150px;
-  max-width: 100%;
-  flex: 1 1 calc(50% - 20px); /* Mobilde 2'li grid */
   height: 150px;
   background-color: white;
   color: black;

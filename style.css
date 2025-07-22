@@ -1,4 +1,9 @@
-/* NOT: Bu CSS eski stillerin yerini almalı */
+#menuBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
 #noteList {
   display: flex;

@@ -133,6 +133,27 @@ function setupMenuHover(menuContainerId, menuId) {
   });
 }
 
+function openEditor(title = '', content = '') {
+  document.getElementById('noteTitleInput').value = title;
+  document.getElementById('noteContentInput').value = content;
+  document.getElementById('editorTitle').textContent = title ? 'Notu Düzenle' : 'Yeni Not';
+
+  // Popup'ı göster
+  document.getElementById('noteEditor').style.display = 'block';
+
+  // Arka planı blur yap
+  document.getElementById('noteList').classList.add('blur-background');
+  document.getElementById('menuBar').classList.add('blur-background');
+}
+
+function closeEditor() {
+  document.getElementById('noteEditor').style.display = 'none';
+
+  // Blur'u kaldır
+  document.getElementById('noteList').classList.remove('blur-background');
+  document.getElementById('menuBar').classList.remove('blur-background');
+}
+
 // Örnek: tüm menü konteynerleri için ayarla
 setupMenuHover("fileMenuContainer", "fileMenu");
 setupMenuHover("editMenuContainer", "editMenu");

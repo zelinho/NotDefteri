@@ -1,0 +1,131 @@
+/* NOT: Bu CSS eski stillerin yerini almalı */
+
+#noteList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.note-card.add-new {
+  font-size: 40px;
+  font-weight: bold;
+  color: #666;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu-container button {
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Buradaki sihir: mouse üzerindeyken menüyü göster */
+.menu-container:hover .menu {
+  display: block;
+}
+
+/* Not kutuları: normal mod */
+.note-card {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.note-card:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.03);
+}
+
+/* Not başlıkları */
+.note-card h4 {
+  margin: 5px 0;
+  font-size: 18px; /* FONT BÜYÜTÜLDÜ */
+}
+
+/* "+" için özel görünüm */
+.note-card.add-new {
+  font-size: 40px;
+  font-weight: bold;
+  color: #666;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🌙 Karanlık mod stili */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .note-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .note-card:hover {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .note-card.add-new {
+  color: #bbb;
+}
+
+/* Menü de karanlık moda uysun */
+body.dark-mode .menu {
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
+body.dark-mode .menu div:hover {
+  background-color: #3a3a3a;
+}

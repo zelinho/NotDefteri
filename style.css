@@ -153,3 +153,17 @@ body.dark-mode .note-card.add-new {
   color: #bbb;
 }
 
+/* Daha dar ekranlar için (örneğin <500px) tek sütun */
+@media (max-width: 500px) {
+  .note-card {
+    flex: 1 1 100%;
+  }
+
+  #noteEditor textarea {
+    width: 100%;
+  }
+
+  #noteEditor input {
+    width: 100%;
+  }
+}

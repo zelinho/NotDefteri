@@ -149,7 +149,7 @@ body.dark-mode .menu div:hover {
 
 .note-card h4 {
   margin: 5px 0;
-  font-size: 18px; /* Font büyütüldü */
+  font-size: 22px; /* Font büyütüldü */
 }
 
 /* Not kutuları karanlık mod */
@@ -204,7 +204,3 @@ body.dark-mode #noteEditor {
   color: #fff;
 }
 
-.blur-background {
-  filter: blur(5px);
-  pointer-events: none; /* Etkileşim kapalı olsun */
-}

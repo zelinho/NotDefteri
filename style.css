@@ -187,3 +187,29 @@ body.dark-mode .note-card.add-new {
     width: 100%;
   }
 }
+
+#noteEditor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1001;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: none;
+}
+
+/* Karanlık mod için */
+body.dark-mode #noteEditor {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none; /* Etkileşim kapalı olsun */
+}

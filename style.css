@@ -27,13 +27,35 @@
   margin-right: 20px;
 }
 
+/* Menü konteyner ve butonlar: varsayılan (açık mod) */
 .menu-container button {
   font-weight: bold;
   background-color: transparent;
   border: none;
   font-size: 16px;
+  padding: 8px 12px;
   cursor: pointer;
+  color: #000; /* Açık modda siyah */
 }
+
+/* Hover efekti açık modda */
+.menu-container button:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* 🌙 Karanlık modda menü butonları */
+body.dark-mode .menu-container button {
+  background-color: transparent;
+  color: #f0f0f0; /* Beyaz yazı */
+}
+
+/* Hover efekti karanlık modda */
+body.dark-mode .menu-container button:hover {
+  background-color: #333;
+  border-radius: 4px;
+}
+
 
 .menu {
   display: none;

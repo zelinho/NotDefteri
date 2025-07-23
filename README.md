@@ -24,7 +24,7 @@ Karanlık mod desteği, sade tasarımı ve kullanışlı arayüzüyle hafif ve e
 
 > Mobil görünüm
 
-![mobil](https://via.placeholder.com/400x800?text=Not+Defteri+-+Mobil+G%C3%B6r%C3%BCn%C3%BCm)
+![mobil](images/2.PNG)
 
 ## 🛠️ Kullanılan Teknolojiler
 

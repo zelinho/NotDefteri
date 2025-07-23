@@ -1,7 +1,7 @@
 #menuBar {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 7px;
   margin-bottom: 10px;
 }
 @media (max-width: 600px) {

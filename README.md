@@ -20,7 +20,7 @@ Karanlık mod desteği, sade tasarımı ve kullanışlı arayüzüyle hafif ve e
 
 > Masaüstü görünümü ve popup editör
 
-![masaustu](https://via.placeholder.com/800x400?text=Not+Defteri+-+Masa%C3%BCst%C3%BC+G%C3%B6r%C3%BCn%C3%BCm)
+![masaustu](images/1.png)
 
 > Mobil görünüm
 

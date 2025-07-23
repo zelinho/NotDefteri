@@ -24,7 +24,7 @@ Karanlık mod desteği, sade tasarımı ve kullanışlı arayüzüyle hafif ve e
 
 > Mobil görünüm
 
-![mobil](images/2.PNG)
+![mobil](images/2.jpg)
 
 ## 🛠️ Kullanılan Teknolojiler
 

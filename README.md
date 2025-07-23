@@ -20,7 +20,7 @@ Karanlık mod desteği, sade tasarımı ve kullanışlı arayüzüyle hafif ve e
 
 > Masaüstü görünümü ve popup editör
 
-![masaustu](images/1.png)
+![masaustu](images/1.PNG)
 
 > Mobil görünüm
 
